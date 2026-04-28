@@ -1,0 +1,321 @@
+---
+import Base from '../../layouts/Base.astro';
+import PageHero from '../../components/PageHero.astro';
+import SectionIntro from '../../components/SectionIntro.astro';
+import CTABand from '../../components/CTABand.astro';
+---
+
+<Base title="About SOMVISION | Consulting for Somalia's Development" description="SOMVISION is a professional consultancy firm delivering expert solutions, strategic guidance, and tailored support to organizations across sectors in Somalia.">
+
+  <PageHero
+    title="About SOMVISION"
+    subtitle="A partner for practical delivery and accountable reform"
+  />
+
+  <!-- Who We Are -->
+  <section id="who-we-are" class="bg-white py-20">
+    <div class="max-w-7xl mx-auto px-6 fade-up">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+        <!-- Left content -->
+        <div class="lg:col-span-2">
+          <SectionIntro
+            label="Who We Are"
+            title="Local understanding. Global standards."
+            centered={false}
+          />
+          <div class="text-slate-600 mt-6 space-y-4">
+            <p>Somvision Consultancy is a professional consultancy firm delivering expert solutions, strategic guidance, and tailored support to organizations across sectors in Somalia.</p>
+            <p>Somalia's development agenda requires institutions that can plan, deliver, and adapt. SOMVISION provides consulting grounded in local realities and aligned with international standards.</p>
+            <p>We work alongside client teams to build systems, transfer knowledge, and strengthen institutional capacity rather than creating parallel structures.</p>
+          </div>
+        </div>
+
+        <!-- Right sidebar -->
+        <div>
+          <div class="bg-slate-50 rounded-lg p-6 border border-slate-200">
+            <h3 class="font-semibold text-navy mb-4">What Sets Us Apart</h3>
+            <div class="space-y-4">
+              <div class="flex items-start gap-3">
+                <div class="w-2 h-2 rounded-full bg-teal mt-2 flex-shrink-0"></div>
+                <p class="text-sm text-slate-600">Strong sector depth in labor, livestock, governance, and program delivery</p>
+              </div>
+              <div class="flex items-start gap-3">
+                <div class="w-2 h-2 rounded-full bg-teal mt-2 flex-shrink-0"></div>
+                <p class="text-sm text-slate-600">Implementation-focused support</p>
+              </div>
+              <div class="flex items-start gap-3">
+                <div class="w-2 h-2 rounded-full bg-teal mt-2 flex-shrink-0"></div>
+                <p class="text-sm text-slate-600">Embedded MEL and compliance discipline</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Vision & Mission -->
+  <section id="vision-mission" class="bg-slate-50 py-20">
+    <div class="max-w-7xl mx-auto px-6 fade-up">
+      <SectionIntro
+        centered
+        label="Vision & Mission"
+        title="Our Direction and Purpose"
+      />
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12">
+        <div class="bg-white rounded-lg p-8 border border-slate-200">
+          <p class="text-xs uppercase tracking-widest text-blue font-bold mb-3">Vision</p>
+          <p class="text-slate-600">To be a trusted and innovative consultancy delivering impactful cross-sector solutions that enable institutions to grow and adapt.</p>
+        </div>
+        <div class="bg-white rounded-lg p-8 border border-slate-200">
+          <p class="text-xs uppercase tracking-widest text-blue font-bold mb-3">Mission</p>
+          <p class="text-slate-600">To provide tailored, high-impact consulting services that strengthen performance, accountability, and sustainable growth across sectors.</p>
+        </div>
+      </div>
+
+      <!-- In Practice -->
+      <div class="mt-12">
+        <h3 class="text-lg font-semibold text-navy text-center mb-6">In Practice</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="bg-white rounded-lg p-6 border border-slate-200">
+            <h4 class="font-semibold text-navy text-sm">Focus on implementable solutions</h4>
+            <p class="text-sm text-slate-600 mt-2">Grounded in local context and practical delivery needs</p>
+          </div>
+          <div class="bg-white rounded-lg p-6 border border-slate-200">
+            <h4 class="font-semibold text-navy text-sm">Define outcomes early</h4>
+            <p class="text-sm text-slate-600 mt-2">Clear results frameworks and accountability measures from the start</p>
+          </div>
+          <div class="bg-white rounded-lg p-6 border border-slate-200">
+            <h4 class="font-semibold text-navy text-sm">Promote transparency</h4>
+            <p class="text-sm text-slate-600 mt-2">Rigorous reporting and ethical data handling throughout</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Core Values -->
+  <section id="core-values" class="bg-white py-20">
+    <div class="max-w-7xl mx-auto px-6 fade-up">
+      <SectionIntro
+        centered
+        label="Our Values"
+        title="Values that protect trust, quality, and results"
+      />
+
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12">
+        <!-- Integrity -->
+        <div class="bg-slate-50 rounded-lg p-6 text-center border border-slate-200 hover:shadow-sm transition">
+          <svg class="w-8 h-8 text-navy mx-auto mb-3" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+          </svg>
+          <h3 class="text-sm font-semibold text-navy">Integrity</h3>
+          <p class="text-xs text-slate-500 mt-2">Honesty and ethical standards in every engagement</p>
+        </div>
+
+        <!-- Excellence -->
+        <div class="bg-slate-50 rounded-lg p-6 text-center border border-slate-200 hover:shadow-sm transition">
+          <svg class="w-8 h-8 text-navy mx-auto mb-3" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+          </svg>
+          <h3 class="text-sm font-semibold text-navy">Excellence</h3>
+          <p class="text-xs text-slate-500 mt-2">Highest quality in analysis, advice, and implementation</p>
+        </div>
+
+        <!-- Professionalism -->
+        <div class="bg-slate-50 rounded-lg p-6 text-center border border-slate-200 hover:shadow-sm transition">
+          <svg class="w-8 h-8 text-navy mx-auto mb-3" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+            <rect x="2" y="7" width="20" height="14" rx="2" /><path d="M16 7V5a4 4 0 00-8 0v2" />
+          </svg>
+          <h3 class="text-sm font-semibold text-navy">Professionalism</h3>
+          <p class="text-xs text-slate-500 mt-2">Rigorous standards across all client interactions</p>
+        </div>
+
+        <!-- Innovation -->
+        <div class="bg-slate-50 rounded-lg p-6 text-center border border-slate-200 hover:shadow-sm transition">
+          <svg class="w-8 h-8 text-navy mx-auto mb-3" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+            <path d="M9 18h6M10 22h4M12 2a7 7 0 015 12 5 5 0 01-1 3H8a5 5 0 01-1-3 7 7 0 015-12z" />
+          </svg>
+          <h3 class="text-sm font-semibold text-navy">Innovation</h3>
+          <p class="text-xs text-slate-500 mt-2">Creative, evidence-based solutions to complex challenges</p>
+        </div>
+
+        <!-- Partnership -->
+        <div class="bg-slate-50 rounded-lg p-6 text-center border border-slate-200 hover:shadow-sm transition">
+          <svg class="w-8 h-8 text-navy mx-auto mb-3" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+            <path d="M7 11l3-3 4 4 6-6" /><path d="M20 6v4h-4" /><path d="M4 20h16" /><path d="M4 16h12" />
+          </svg>
+          <h3 class="text-sm font-semibold text-navy">Partnership</h3>
+          <p class="text-xs text-slate-500 mt-2">Lasting relationships with clients and institutions</p>
+        </div>
+
+        <!-- Accountability -->
+        <div class="bg-slate-50 rounded-lg p-6 text-center border border-slate-200 hover:shadow-sm transition">
+          <svg class="w-8 h-8 text-navy mx-auto mb-3" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+            <path d="M12 3v3M6.3 6.3l2.1 2.1M3 12h3M6.3 17.7l2.1-2.1M12 18v3M17.7 17.7l-2.1-2.1M21 12h-3M17.7 6.3l-2.1 2.1" /><circle cx="12" cy="12" r="4" />
+          </svg>
+          <h3 class="text-sm font-semibold text-navy">Accountability</h3>
+          <p class="text-xs text-slate-500 mt-2">Clear reporting and transparent delivery</p>
+        </div>
+
+        <!-- Confidentiality -->
+        <div class="bg-slate-50 rounded-lg p-6 text-center border border-slate-200 hover:shadow-sm transition">
+          <svg class="w-8 h-8 text-navy mx-auto mb-3" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+            <rect x="3" y="11" width="18" height="11" rx="2" /><path d="M7 11V7a5 5 0 0110 0v4" />
+          </svg>
+          <h3 class="text-sm font-semibold text-navy">Confidentiality</h3>
+          <p class="text-xs text-slate-500 mt-2">Protecting client data and sensitive information</p>
+        </div>
+
+        <!-- Sustainability -->
+        <div class="bg-slate-50 rounded-lg p-6 text-center border border-slate-200 hover:shadow-sm transition">
+          <svg class="w-8 h-8 text-navy mx-auto mb-3" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+            <path d="M17 8C8 10 5.9 16.17 3.82 21.34l1.89.66.95-2.3c.48.17.98.3 1.34.3C19 20 22 3 22 3c-1 2-8 2.25-13 3.25S2 11.5 2 13.5s1.75 3.75 1.75 3.75" />
+          </svg>
+          <h3 class="text-sm font-semibold text-navy">Sustainability</h3>
+          <p class="text-xs text-slate-500 mt-2">Long-term institutional strengthening and lasting impact</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Leadership & Team -->
+  <section id="leadership" class="bg-slate-50 py-20">
+    <div class="max-w-7xl mx-auto px-6 fade-up">
+      <SectionIntro
+        centered
+        label="Leadership & Team"
+        title="A multidisciplinary team built for delivery"
+        description="Led by a CEO with 32 years of humanitarian leadership, supported by senior directors and sector specialists."
+      />
+
+      <div class="mt-8 max-w-2xl mx-auto text-center">
+        <p class="text-slate-600">We deploy small, accountable teams with technical leadership, delivery coordination, and MEL and data support.</p>
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-6 mt-12">
+        <!-- Abdijabar Hassan Dini -->
+        <div class="bg-white rounded-lg p-5 text-center border border-slate-200 hover:shadow-sm transition">
+          <img src="/team/abdijabar-dini.jpeg" alt="Abdijabar Hassan Dini" class="w-16 h-16 rounded-full object-cover mx-auto ring-2 ring-slate-100" loading="lazy" />
+          <p class="text-sm font-semibold text-navy mt-3">Abdijabar Hassan Dini</p>
+          <p class="text-xs text-blue font-medium mt-1">CEO</p>
+        </div>
+
+        <!-- Abdulrahman Mohamed -->
+        <div class="bg-white rounded-lg p-5 text-center border border-slate-200 hover:shadow-sm transition">
+          <img src="/team/abdulrahman-mohamed.jpg" alt="Abdulrahman Mohamed" class="w-16 h-16 rounded-full object-cover mx-auto ring-2 ring-slate-100" loading="lazy" />
+          <p class="text-sm font-semibold text-navy mt-3">Abdulrahman Mohamed</p>
+          <p class="text-xs text-blue font-medium mt-1">Country Director, Somalia</p>
+        </div>
+
+        <!-- Ibrahim Ahmed Mohamed -->
+        <div class="bg-white rounded-lg p-5 text-center border border-slate-200 hover:shadow-sm transition">
+          <img src="/team/ibrahim-ahmed.jpg" alt="Ibrahim Ahmed Mohamed" class="w-16 h-16 rounded-full object-cover mx-auto ring-2 ring-slate-100" loading="lazy" />
+          <p class="text-sm font-semibold text-navy mt-3">Ibrahim Ahmed Mohamed</p>
+          <p class="text-xs text-blue font-medium mt-1">Business Development & Partnerships</p>
+        </div>
+
+        <!-- Ali Omar Hussein -->
+        <div class="bg-white rounded-lg p-5 text-center border border-slate-200 hover:shadow-sm transition">
+          <img src="/team/ali-omar.jpg" alt="Ali Omar Hussein" class="w-16 h-16 rounded-full object-cover mx-auto ring-2 ring-slate-100" loading="lazy" />
+          <p class="text-sm font-semibold text-navy mt-3">Ali Omar Hussein</p>
+          <p class="text-xs text-blue font-medium mt-1">Finance & Administration</p>
+        </div>
+
+        <!-- Ilham Ali Mohamed -->
+        <div class="bg-white rounded-lg p-5 text-center border border-slate-200 hover:shadow-sm transition">
+          <img src="/team/ilham-ali.jpg" alt="Ilham Ali Mohamed" class="w-16 h-16 rounded-full object-cover mx-auto ring-2 ring-slate-100" loading="lazy" />
+          <p class="text-sm font-semibold text-navy mt-3">Ilham Ali Mohamed</p>
+          <p class="text-xs text-blue font-medium mt-1">Human Resources</p>
+        </div>
+
+        <!-- Abass Sheikh -->
+        <div class="bg-white rounded-lg p-5 text-center border border-slate-200 hover:shadow-sm transition">
+          <img src="/team/abass-sheikh.jpg" alt="Abass Sheikh" class="w-16 h-16 rounded-full object-cover mx-auto ring-2 ring-slate-100" loading="lazy" />
+          <p class="text-sm font-semibold text-navy mt-3">Abass Sheikh</p>
+          <p class="text-xs text-blue font-medium mt-1">Program Delivery</p>
+        </div>
+      </div>
+
+      <!-- Meet Full Team -->
+      <div class="mt-10 text-center">
+        <a
+          href="/about/team"
+          class="inline-flex items-center border-2 border-navy text-navy rounded-md px-6 py-3 text-sm font-medium hover:bg-navy hover:text-white transition-colors"
+        >
+          Meet the Full Team &rarr;
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Approach -->
+  <section id="approach" class="bg-white py-20">
+    <div class="max-w-7xl mx-auto px-6 fade-up">
+      <SectionIntro
+        centered
+        label="Our Approach"
+        title="From strategy to sustained delivery"
+      />
+
+      <div class="max-w-2xl mx-auto mt-12">
+        <!-- Step 1 -->
+        <div class="flex">
+          <div class="flex flex-col items-center">
+            <div class="w-10 h-10 rounded-full bg-navy text-white flex items-center justify-center font-bold text-sm flex-shrink-0">1</div>
+            <div class="flex-1 w-px border-l-2 border-slate-200"></div>
+          </div>
+          <div class="ml-6 pb-10">
+            <h3 class="font-semibold text-navy">Results-Based Design</h3>
+            <p class="text-sm text-slate-600 mt-1">We define outcomes, indicators, and risks early through structured results frameworks.</p>
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="flex">
+          <div class="flex flex-col items-center">
+            <div class="w-10 h-10 rounded-full bg-navy text-white flex items-center justify-center font-bold text-sm flex-shrink-0">2</div>
+            <div class="flex-1 w-px border-l-2 border-slate-200"></div>
+          </div>
+          <div class="ml-6 pb-10">
+            <h3 class="font-semibold text-navy">Delivery Systems</h3>
+            <p class="text-sm text-slate-600 mt-1">We build and strengthen registries, reporting tools, and service delivery platforms.</p>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="flex">
+          <div class="flex flex-col items-center">
+            <div class="w-10 h-10 rounded-full bg-navy text-white flex items-center justify-center font-bold text-sm flex-shrink-0">3</div>
+            <div class="flex-1 w-px border-l-2 border-slate-200"></div>
+          </div>
+          <div class="ml-6 pb-10">
+            <h3 class="font-semibold text-navy">Adaptive Management</h3>
+            <p class="text-sm text-slate-600 mt-1">We use learning and real-time feedback to improve implementation continuously.</p>
+          </div>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="flex">
+          <div class="flex flex-col items-center">
+            <div class="w-10 h-10 rounded-full bg-navy text-white flex items-center justify-center font-bold text-sm flex-shrink-0">4</div>
+          </div>
+          <div class="ml-6 pb-10">
+            <h3 class="font-semibold text-navy">Accountability</h3>
+            <p class="text-sm text-slate-600 mt-1">We align evaluation and reporting to international standards including OECD DAC and UN norms.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <CTABand
+    title="Ready to work with us?"
+    description="Let us discuss how SOMVISION can support your program goals."
+    primaryLabel="Start a Conversation"
+    primaryHref="/contact"
+  />
+
+</Base>

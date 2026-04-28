@@ -1,0 +1,302 @@
+---
+import Base from '../layouts/Base.astro';
+import SectionIntro from '../components/SectionIntro.astro';
+import CTABand from '../components/CTABand.astro';
+---
+
+<Base title="SOMVISION | Consulting for Somalia's Development" description="Advisory and implementation support for government, development partners, and institutions. Focused on results, compliance, and practical delivery.">
+
+  <!-- Hero -->
+  <section class="bg-navy bg-gradient-to-br from-navy via-navy-medium to-navy-light min-h-[85vh] md:min-h-[85vh] flex items-center">
+    <div class="max-w-7xl mx-auto px-6 py-20 md:py-28">
+      <div class="fade-up">
+        <p class="uppercase tracking-wide text-blue font-semibold text-sm mb-4">Consulting for Somalia's Development</p>
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight max-w-3xl">
+          Building Somalia's Future with Vision and Partnership
+        </h1>
+        <p class="text-lg md:text-xl text-slate-300 max-w-2xl mt-6">
+          Advisory and implementation support for government, development partners, and institutions. Focused on results, compliance, and practical delivery.
+        </p>
+        <div class="flex flex-wrap gap-4 mt-8">
+          <a href="/services" class="bg-blue text-white px-6 py-3 rounded-md font-medium hover:bg-blue-dark transition-colors">
+            Explore Our Services
+          </a>
+          <a href="/contact" class="border-2 border-slate-400 text-white px-6 py-3 rounded-md font-medium hover:border-white transition-colors">
+            Get in Touch
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- What We Do -->
+  <section class="bg-white py-20">
+    <div class="max-w-7xl mx-auto px-6">
+      <SectionIntro
+        label="What We Do"
+        title="Cross-sector consulting for institutional strengthening"
+        description="SOMVISION supports institutions to design, implement, and strengthen programs across strategy, governance, project management, digital service delivery, and capacity development."
+      />
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6 mt-12 fade-up">
+        <!-- Strategy & Advisory -->
+        <div class="bg-slate-50 border border-slate-200 rounded-lg p-6 hover:shadow-md hover:-translate-y-1 transition-all duration-300">
+          <div class="w-10 h-10 rounded-lg bg-blue/10 flex items-center justify-center mb-4">
+            <svg class="w-5 h-5 text-blue" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="10" /><circle cx="12" cy="12" r="6" /><circle cx="12" cy="12" r="2" /><line x1="12" y1="2" x2="12" y2="6" /><line x1="12" y1="18" x2="12" y2="22" /><line x1="2" y1="12" x2="6" y2="12" /><line x1="18" y1="12" x2="22" y2="12" />
+            </svg>
+          </div>
+          <h3 class="text-base font-semibold text-navy">Strategy & Advisory</h3>
+          <p class="text-sm text-slate-600 mt-2 leading-relaxed">Strategy development translated into actionable plans with clear priorities, governance, and KPIs.</p>
+          <a href="/services#strategy" class="text-sm text-blue font-medium mt-4 inline-block hover:underline">Learn more &rarr;</a>
+        </div>
+
+        <!-- Governance & Institutional Strengthening -->
+        <div class="bg-slate-50 border border-slate-200 rounded-lg p-6 hover:shadow-md hover:-translate-y-1 transition-all duration-300">
+          <div class="w-10 h-10 rounded-lg bg-blue/10 flex items-center justify-center mb-4">
+            <svg class="w-5 h-5 text-blue" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6M9 9h.01M15 9h.01M9 13h.01M15 13h.01" />
+            </svg>
+          </div>
+          <h3 class="text-base font-semibold text-navy">Governance & Institutional Strengthening</h3>
+          <p class="text-sm text-slate-600 mt-2 leading-relaxed">Support to improve institutional performance, coordination, and accountability systems.</p>
+          <a href="/services#governance" class="text-sm text-blue font-medium mt-4 inline-block hover:underline">Learn more &rarr;</a>
+        </div>
+
+        <!-- Project Management, MEL & Compliance -->
+        <div class="bg-slate-50 border border-slate-200 rounded-lg p-6 hover:shadow-md hover:-translate-y-1 transition-all duration-300">
+          <div class="w-10 h-10 rounded-lg bg-blue/10 flex items-center justify-center mb-4">
+            <svg class="w-5 h-5 text-blue" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2" /><rect x="9" y="3" width="6" height="4" rx="1" /><path d="M9 14l2 2 4-4" />
+            </svg>
+          </div>
+          <h3 class="text-base font-semibold text-navy">Project Management, MEL & Compliance</h3>
+          <p class="text-sm text-slate-600 mt-2 leading-relaxed">End-to-end delivery support including planning, reporting, evaluation, and compliance.</p>
+          <a href="/services#project-management" class="text-sm text-blue font-medium mt-4 inline-block hover:underline">Learn more &rarr;</a>
+        </div>
+
+        <!-- Digital & IT Consulting -->
+        <div class="bg-slate-50 border border-slate-200 rounded-lg p-6 hover:shadow-md hover:-translate-y-1 transition-all duration-300">
+          <div class="w-10 h-10 rounded-lg bg-blue/10 flex items-center justify-center mb-4">
+            <svg class="w-5 h-5 text-blue" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <rect x="2" y="3" width="20" height="14" rx="2" /><line x1="8" y1="21" x2="16" y2="21" /><line x1="12" y1="17" x2="12" y2="21" />
+            </svg>
+          </div>
+          <h3 class="text-base font-semibold text-navy">Digital & IT Consulting</h3>
+          <p class="text-sm text-slate-600 mt-2 leading-relaxed">Design and implementation of digital service delivery systems, dashboards, and data platforms.</p>
+          <a href="/services#digital" class="text-sm text-blue font-medium mt-4 inline-block hover:underline">Learn more &rarr;</a>
+        </div>
+
+        <!-- HR & Capacity Development -->
+        <div class="bg-slate-50 border border-slate-200 rounded-lg p-6 hover:shadow-md hover:-translate-y-1 transition-all duration-300">
+          <div class="w-10 h-10 rounded-lg bg-blue/10 flex items-center justify-center mb-4">
+            <svg class="w-5 h-5 text-blue" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" /><circle cx="9" cy="7" r="4" /><path d="M23 21v-2a4 4 0 00-3-3.87" /><path d="M16 3.13a4 4 0 010 7.75" />
+            </svg>
+          </div>
+          <h3 class="text-base font-semibold text-navy">HR & Capacity Development</h3>
+          <p class="text-sm text-slate-600 mt-2 leading-relaxed">Workforce development, training, and organizational strengthening aligned to delivery needs.</p>
+          <a href="/services#hr" class="text-sm text-blue font-medium mt-4 inline-block hover:underline">Learn more &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Band -->
+  <section class="bg-navy py-16">
+    <div class="max-w-7xl mx-auto px-6 fade-up">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+        <div>
+          <p class="text-4xl md:text-5xl font-bold text-white">4</p>
+          <p class="text-sm text-slate-400 mt-2 uppercase tracking-wide">Core Sectors</p>
+        </div>
+        <div>
+          <p class="text-4xl md:text-5xl font-bold text-white">5</p>
+          <p class="text-sm text-slate-400 mt-2 uppercase tracking-wide">Service Lines</p>
+        </div>
+        <div>
+          <p class="text-4xl md:text-5xl font-bold text-white">50+</p>
+          <p class="text-sm text-slate-400 mt-2 uppercase tracking-wide">Professionals</p>
+        </div>
+        <div>
+          <p class="text-4xl md:text-5xl font-bold text-white">10+</p>
+          <p class="text-sm text-slate-400 mt-2 uppercase tracking-wide">Years Experience</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sectors -->
+  <section class="bg-slate-50 py-20">
+    <div class="max-w-7xl mx-auto px-6">
+      <SectionIntro
+        label="Where We Work"
+        title="Sector depth aligned to national priorities"
+        description="Our focus reflects Somalia's development priorities and partner-funded program requirements."
+      />
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12 fade-up">
+        <!-- Labor -->
+        <div class="bg-white border-l-4 border-l-teal rounded-lg p-6 shadow-sm hover:shadow-md transition">
+          <h3 class="text-lg font-semibold text-navy">Labor, Employment & Social Protection</h3>
+          <p class="text-sm text-slate-600 mt-2">Strengthening employment programs, TVET systems, and social protection delivery platforms.</p>
+          <div class="flex gap-2 mt-4 flex-wrap">
+            <span class="text-xs bg-slate-100 text-slate-600 px-2 py-1 rounded">TVET</span>
+            <span class="text-xs bg-slate-100 text-slate-600 px-2 py-1 rounded">Employment</span>
+            <span class="text-xs bg-slate-100 text-slate-600 px-2 py-1 rounded">Social Protection</span>
+          </div>
+          <a href="/sectors#labor" class="text-sm text-blue font-medium mt-3 inline-block hover:underline">Explore sector &rarr;</a>
+        </div>
+
+        <!-- Livestock -->
+        <div class="bg-white border-l-4 border-l-teal rounded-lg p-6 shadow-sm hover:shadow-md transition">
+          <h3 class="text-lg font-semibold text-navy">Livestock, Veterinary & One Health</h3>
+          <p class="text-sm text-slate-600 mt-2">Supporting livestock systems, veterinary services, and One Health coordination for resilience.</p>
+          <div class="flex gap-2 mt-4 flex-wrap">
+            <span class="text-xs bg-slate-100 text-slate-600 px-2 py-1 rounded">Livestock</span>
+            <span class="text-xs bg-slate-100 text-slate-600 px-2 py-1 rounded">Veterinary</span>
+            <span class="text-xs bg-slate-100 text-slate-600 px-2 py-1 rounded">One Health</span>
+          </div>
+          <a href="/sectors#livestock" class="text-sm text-blue font-medium mt-3 inline-block hover:underline">Explore sector &rarr;</a>
+        </div>
+
+        <!-- Governance -->
+        <div class="bg-white border-l-4 border-l-teal rounded-lg p-6 shadow-sm hover:shadow-md transition">
+          <h3 class="text-lg font-semibold text-navy">Governance & Public Sector Reform</h3>
+          <p class="text-sm text-slate-600 mt-2">Institutional strengthening, performance systems, and reform implementation.</p>
+          <div class="flex gap-2 mt-4 flex-wrap">
+            <span class="text-xs bg-slate-100 text-slate-600 px-2 py-1 rounded">Governance</span>
+            <span class="text-xs bg-slate-100 text-slate-600 px-2 py-1 rounded">Reform</span>
+            <span class="text-xs bg-slate-100 text-slate-600 px-2 py-1 rounded">Institutions</span>
+          </div>
+          <a href="/sectors#governance" class="text-sm text-blue font-medium mt-3 inline-block hover:underline">Explore sector &rarr;</a>
+        </div>
+
+        <!-- Development Programs -->
+        <div class="bg-white border-l-4 border-l-teal rounded-lg p-6 shadow-sm hover:shadow-md transition">
+          <h3 class="text-lg font-semibold text-navy">Development Programs & Donor Support</h3>
+          <p class="text-sm text-slate-600 mt-2">Design, delivery, and reporting support aligned with donor requirements.</p>
+          <div class="flex gap-2 mt-4 flex-wrap">
+            <span class="text-xs bg-slate-100 text-slate-600 px-2 py-1 rounded">Donor Programs</span>
+            <span class="text-xs bg-slate-100 text-slate-600 px-2 py-1 rounded">Compliance</span>
+            <span class="text-xs bg-slate-100 text-slate-600 px-2 py-1 rounded">Delivery</span>
+          </div>
+          <a href="/sectors#development" class="text-sm text-blue font-medium mt-3 inline-block hover:underline">Explore sector &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How We Deliver -->
+  <section class="bg-white py-20">
+    <div class="max-w-7xl mx-auto px-6">
+      <SectionIntro
+        centered
+        label="How We Deliver"
+        title="From strategy to sustained delivery"
+      />
+      <div class="max-w-2xl mx-auto mt-12 fade-up">
+        <!-- Step 1 -->
+        <div class="flex">
+          <div class="flex flex-col items-center">
+            <div class="w-10 h-10 rounded-full bg-navy text-white flex items-center justify-center font-bold text-sm flex-shrink-0">1</div>
+            <div class="flex-1 w-px border-l-2 border-slate-200"></div>
+          </div>
+          <div class="ml-6 pb-10">
+            <h3 class="font-semibold text-navy">Results-Based Design</h3>
+            <p class="text-sm text-slate-600 mt-1">We define outcomes, indicators, and risks early through structured results frameworks.</p>
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="flex">
+          <div class="flex flex-col items-center">
+            <div class="w-10 h-10 rounded-full bg-navy text-white flex items-center justify-center font-bold text-sm flex-shrink-0">2</div>
+            <div class="flex-1 w-px border-l-2 border-slate-200"></div>
+          </div>
+          <div class="ml-6 pb-10">
+            <h3 class="font-semibold text-navy">Delivery Systems</h3>
+            <p class="text-sm text-slate-600 mt-1">We build and strengthen registries, reporting tools, and service delivery platforms.</p>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="flex">
+          <div class="flex flex-col items-center">
+            <div class="w-10 h-10 rounded-full bg-navy text-white flex items-center justify-center font-bold text-sm flex-shrink-0">3</div>
+            <div class="flex-1 w-px border-l-2 border-slate-200"></div>
+          </div>
+          <div class="ml-6 pb-10">
+            <h3 class="font-semibold text-navy">Adaptive Management</h3>
+            <p class="text-sm text-slate-600 mt-1">We use learning and real-time feedback to improve implementation continuously.</p>
+          </div>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="flex">
+          <div class="flex flex-col items-center">
+            <div class="w-10 h-10 rounded-full bg-navy text-white flex items-center justify-center font-bold text-sm flex-shrink-0">4</div>
+          </div>
+          <div class="ml-6 pb-10">
+            <h3 class="font-semibold text-navy">Accountability</h3>
+            <p class="text-sm text-slate-600 mt-1">We align evaluation and reporting to international standards including OECD DAC and UN norms.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why SOMVISION -->
+  <section class="bg-slate-50 py-20">
+    <div class="max-w-7xl mx-auto px-6">
+      <SectionIntro
+        centered
+        label="Why SOMVISION"
+        title="Built for accountability, compliance, and results"
+      />
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12 max-w-3xl mx-auto fade-up">
+        <div class="flex items-start gap-4 p-5 bg-white rounded-lg border border-slate-200">
+          <div class="w-6 h-6 rounded-full bg-teal text-white flex items-center justify-center flex-shrink-0 mt-0.5">
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24">
+              <path d="M5 13l4 4L19 7" />
+            </svg>
+          </div>
+          <p class="text-sm font-medium text-navy">Rooted in local context with a delivery-first orientation</p>
+        </div>
+        <div class="flex items-start gap-4 p-5 bg-white rounded-lg border border-slate-200">
+          <div class="w-6 h-6 rounded-full bg-teal text-white flex items-center justify-center flex-shrink-0 mt-0.5">
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24">
+              <path d="M5 13l4 4L19 7" />
+            </svg>
+          </div>
+          <p class="text-sm font-medium text-navy">Strong alignment with donor and government systems</p>
+        </div>
+        <div class="flex items-start gap-4 p-5 bg-white rounded-lg border border-slate-200">
+          <div class="w-6 h-6 rounded-full bg-teal text-white flex items-center justify-center flex-shrink-0 mt-0.5">
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24">
+              <path d="M5 13l4 4L19 7" />
+            </svg>
+          </div>
+          <p class="text-sm font-medium text-navy">Practical implementation support, not just advisory</p>
+        </div>
+        <div class="flex items-start gap-4 p-5 bg-white rounded-lg border border-slate-200">
+          <div class="w-6 h-6 rounded-full bg-teal text-white flex items-center justify-center flex-shrink-0 mt-0.5">
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24">
+              <path d="M5 13l4 4L19 7" />
+            </svg>
+          </div>
+          <p class="text-sm font-medium text-navy">Designed for accountability, compliance, and measurable results</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <CTABand
+    title="Ready to discuss your next project?"
+    description="We respond with clarity, timelines, and next steps aligned to your program needs."
+    primaryLabel="Start a Conversation"
+    primaryHref="/contact"
+    secondaryLabel="View Our Work"
+    secondaryHref="/work"
+  />
+
+</Base>
