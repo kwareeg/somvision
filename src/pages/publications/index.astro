@@ -1,0 +1,206 @@
+---
+import Base from '../../layouts/Base.astro';
+import PageHero from '../../components/PageHero.astro';
+import SectionIntro from '../../components/SectionIntro.astro';
+import CTABand from '../../components/CTABand.astro';
+
+const reports = [
+  {
+    type: "Report",
+    title: "Somalia Labor Market Assessment 2024",
+    date: "2024",
+    description: "Comprehensive analysis of Somalia's labor market dynamics, employment trends, and workforce development opportunities.",
+  },
+  {
+    type: "Report",
+    title: "Institutional Capacity Review: Federal Ministry Governance",
+    date: "2024",
+    description: "Assessment of governance structures and institutional capacity within federal ministry systems.",
+  },
+  {
+    type: "Report",
+    title: "Livestock Sector Employment and Livelihood Analysis",
+    date: "2023",
+    description: "Analysis of employment generation and livelihood patterns within Somalia's livestock value chain.",
+  },
+];
+
+const policyBriefs = [
+  {
+    type: "Policy Brief",
+    title: "Strengthening Social Protection Delivery in Somalia",
+    date: "2024",
+    description: "Recommendations for improving social protection targeting, delivery mechanisms, and beneficiary registration systems.",
+  },
+  {
+    type: "Policy Brief",
+    title: "TVET Reform and Youth Employment",
+    date: "2024",
+    description: "Strategic recommendations for aligning technical and vocational training with labor market demand.",
+  },
+  {
+    type: "Policy Brief",
+    title: "One Health Integration in Pastoral Communities",
+    date: "2023",
+    description: "Policy framework for integrating livestock health, human health, and environmental resilience in pastoral areas.",
+  },
+];
+
+const insights = [
+  {
+    type: "Insight",
+    title: "Donor Compliance in Fragile Contexts",
+    date: "2024",
+    description: "Practical lessons from implementing donor compliance frameworks in Somalia's development programming.",
+  },
+  {
+    type: "Insight",
+    title: "Digital Service Delivery: Lessons from Implementation",
+    date: "2024",
+    description: "Reflections on deploying digital platforms for public service delivery in low-connectivity environments.",
+  },
+  {
+    type: "Insight",
+    title: "Adaptive Management in Practice",
+    date: "2023",
+    description: "How adaptive management approaches improve project outcomes in complex delivery environments.",
+  },
+];
+
+const technicalPapers = [
+  {
+    type: "Technical Paper",
+    title: "Results Framework Design for Multi-Sector Programs",
+    date: "2024",
+    description: "Technical guidance on designing results frameworks that serve both accountability and learning objectives across sectors.",
+  },
+  {
+    type: "Technical Paper",
+    title: "MEL Systems for Livestock and Veterinary Programs",
+    date: "2023",
+    description: "Technical specifications for monitoring, evaluation, and learning systems tailored to livestock sector programs.",
+  },
+];
+---
+
+<Base title="Publications | SOMVISCON" description="Evidence-based reports, policy briefs, and technical papers from SOMVISCON.">
+
+  <PageHero
+    title="Publications"
+    subtitle="Evidence that informs decisions"
+  />
+
+  <!-- Intro -->
+  <section class="bg-white py-16">
+    <div class="max-w-7xl mx-auto px-6 fade-up">
+      <p class="text-lg text-slate-600 max-w-2xl mx-auto text-center">
+        Our publications translate evidence into practical recommendations that support policy, program design, and implementation across Somalia and the region.
+      </p>
+    </div>
+  </section>
+
+  <!-- Reports -->
+  <section id="reports" class="bg-white py-16">
+    <div class="max-w-7xl mx-auto px-6 fade-up">
+      <SectionIntro
+        label="Reports"
+        title="Research and analytical reports"
+        centered={false}
+      />
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
+        {reports.map((pub) => (
+          <div class="bg-white border border-slate-200 rounded-lg p-6 hover:shadow-md transition">
+            <span class="text-xs font-medium px-2 py-1 rounded bg-blue/10 text-blue inline-block">
+              {pub.type}
+            </span>
+            <h3 class="text-base font-semibold text-navy mt-3">{pub.title}</h3>
+            <p class="text-xs text-slate-400 mt-1">{pub.date}</p>
+            <p class="text-sm text-slate-600 mt-2">{pub.description}</p>
+            <a href="#" class="text-sm text-blue font-medium mt-4 inline-block hover:underline">Download PDF</a>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Policy Briefs -->
+  <section id="policy-briefs" class="bg-slate-50 py-16">
+    <div class="max-w-7xl mx-auto px-6 fade-up">
+      <SectionIntro
+        label="Policy Briefs"
+        title="Actionable policy recommendations"
+        centered={false}
+      />
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
+        {policyBriefs.map((pub) => (
+          <div class="bg-white border border-slate-200 rounded-lg p-6 hover:shadow-md transition">
+            <span class="text-xs font-medium px-2 py-1 rounded bg-blue/10 text-blue inline-block">
+              {pub.type}
+            </span>
+            <h3 class="text-base font-semibold text-navy mt-3">{pub.title}</h3>
+            <p class="text-xs text-slate-400 mt-1">{pub.date}</p>
+            <p class="text-sm text-slate-600 mt-2">{pub.description}</p>
+            <a href="#" class="text-sm text-blue font-medium mt-4 inline-block hover:underline">Download PDF</a>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Insights -->
+  <section id="insights" class="bg-white py-16">
+    <div class="max-w-7xl mx-auto px-6 fade-up">
+      <SectionIntro
+        label="Insights"
+        title="Analysis and commentary"
+        centered={false}
+      />
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
+        {insights.map((pub) => (
+          <div class="bg-white border border-slate-200 rounded-lg p-6 hover:shadow-md transition">
+            <span class="text-xs font-medium px-2 py-1 rounded bg-blue/10 text-blue inline-block">
+              {pub.type}
+            </span>
+            <h3 class="text-base font-semibold text-navy mt-3">{pub.title}</h3>
+            <p class="text-xs text-slate-400 mt-1">{pub.date}</p>
+            <p class="text-sm text-slate-600 mt-2">{pub.description}</p>
+            <a href="#" class="text-sm text-blue font-medium mt-4 inline-block hover:underline">Download PDF</a>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Technical Papers -->
+  <section id="technical-papers" class="bg-slate-50 py-16">
+    <div class="max-w-7xl mx-auto px-6 fade-up">
+      <SectionIntro
+        label="Technical Papers"
+        title="In-depth technical analysis"
+        centered={false}
+      />
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10">
+        {technicalPapers.map((pub) => (
+          <div class="bg-white border border-slate-200 rounded-lg p-6 hover:shadow-md transition">
+            <span class="text-xs font-medium px-2 py-1 rounded bg-blue/10 text-blue inline-block">
+              {pub.type}
+            </span>
+            <h3 class="text-base font-semibold text-navy mt-3">{pub.title}</h3>
+            <p class="text-xs text-slate-400 mt-1">{pub.date}</p>
+            <p class="text-sm text-slate-600 mt-2">{pub.description}</p>
+            <a href="#" class="text-sm text-blue font-medium mt-4 inline-block hover:underline">Download PDF</a>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <CTABand
+    title="Looking for specific research?"
+    description="Contact us for access to our full publications library."
+    primaryLabel="Request Access"
+    primaryHref="/contact"
+  />
+
+</Base>
